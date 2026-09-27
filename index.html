@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucid Stem | IT, Web & Digital Solutions</title>
+    <meta name="description" content="Lucid Stem is a forward-thinking IT company in Johannesburg offering web development, digital systems, IT support, and technology solutions for growing businesses.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Floating Actions -->
+    <div class="floating-actions">
+        <a href="#contact" class="btn btn-primary sticky-cta">
+            <i class="fas fa-bolt"></i> Get a Quote
+        </a>
+    </div>
+    <a href="https://wa.me/27123456789" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">Lucid Stem</span>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#why-us" class="nav-link">Why Us</a></li>
+                    <li><a href="#contact" class="nav-link btn btn-primary nav-btn">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger-menu" id="mobile-toggle" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-container grid-2-col animate-on-scroll">
+            <div class="hero-content">
+                <h1 class="hero-title">Building the Future of Digital Business</h1>
+                <p class="hero-subtitle">Professional websites, digital systems, and technology solutions for growing businesses.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary btn-lg">Get Started</a>
+                    <a href="#portfolio" class="btn btn-secondary btn-lg">View Our Work</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="abstract-shape"></div>
+                <div class="abstract-card main-card">
+                    <div class="card-header">
+                        <div class="dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="line w-100"></div>
+                        <div class="line w-75"></div>
+                        <div class="line w-90"></div>
+                        <div class="chart-mockup">
+                            <div class="bar h-60"></div>
+                            <div class="bar h-80"></div>
+                            <div class="bar h-40"></div>
+                            <div class="bar h-100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="abstract-card float-card p-1">
+                    <i class="fas fa-shield-alt text-primary"></i> <span class="fw-600">Secure</span>
+                </div>
+                <div class="abstract-card float-card p-2">
+                    <i class="fas fa-rocket text-primary"></i> <span class="fw-600">Fast & Scalable</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Banner -->
+    <section class="trust-banner">
+        <div class="container trust-wrapper animate-on-scroll">
+            <div class="location-trust">
+                <i class="fas fa-map-marker-alt text-primary"></i>
+                Trusted by South African Businesses
+            </div>
+            <div class="trust-logos">
+                <i class="fab fa-aws"></i>
+                <i class="fab fa-microsoft"></i>
+                <i class="fab fa-google"></i>
+                <i class="fas fa-building"></i>
+                <i class="fas fa-industry"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding bg-light" id="about">
+        <div class="container animate-on-scroll">
+            <div class="section-header text-center">
+                <h2 class="section-title">Who We Are</h2>
+                <div class="divider mx-auto"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="lead">Lucid Stem is a forward-thinking IT company based in Johannesburg, South Africa, focused on helping businesses grow through innovative technology.</p>
+                    <p>We partner with companies to build modern web solutions, robust digital infrastructure, and streamlined processes. By leveraging the latest technologies in web development and IT support—and with an eye constantly set on future expansion into cybersecurity, detailed analytics, and logistics tech—we ensure your digital presence is built to scale.</p>
+                    <ul class="check-list mt-4">
+                        <li><i class="fas fa-check-circle"></i> Innovative digital strategies</li>
+                        <li><i class="fas fa-check-circle"></i> Forward-looking infrastructure</li>
+                        <li><i class="fas fa-check-circle"></i> Dedicated local support</li>
+                    </ul>
+                </div>
+                <div class="about-image-container">
+                    <!-- We use CSS & abstractions instead of empty placeholders requested by user rule, generating a nice aesthetic block -->
+                    <div class="about-aesthetic">
+                        <div class="aesthetic-overlay"></div>
+                        <div class="aesthetic-content">
+                            <h3>Empowering Growth</h3>
+                            <p>Technology tailored to your business needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section-padding" id="services">
+        <div class="container animate-on-scroll">
+            <div class="section-header text-center">
+                <h2 class="section-title">Our Services</h2>
+                <div class="divider mx-auto"></div>
+                <p class="section-subtitle">Comprehensive IT and digital solutions designed to elevate your brand and operations.</p>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-code"></i></div>
+                    <h3 class="service-title">Website Development</h3>
+                    <p class="service-desc">Modern, responsive, and high-performance websites built to convert visitors into loyal customers.</p>
+                    <div class="service-footer mt-4">
+                        <span class="service-price">From R4,999</span>
+                        <a href="#contact" class="btn btn-secondary btn-sm">Inquire</a>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-tools"></i></div>
+                    <h3 class="service-title">Website Maintenance & Support</h3>
+                    <p class="service-desc">Ongoing technical support, security updates, and performance tuning to keep your systems running smoothly.</p>
+                    <div class="service-footer mt-4">
+                        <span class="service-price">From R999/mo</span>
+                        <a href="#contact" class="btn btn-secondary btn-sm">Inquire</a>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3 class="service-title">IT Consulting</h3>
+                    <p class="service-desc">Strategic advice to help you build an efficient IT architecture that aligns perfectly with your business goals.</p>
+                    <div class="service-footer mt-4">
+                        <span class="service-price">From R750/hr</span>
+                        <a href="#contact" class="btn btn-secondary btn-sm">Inquire</a>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-cogs"></i></div>
+                    <h3 class="service-title">Digital Systems & Automation</h3>
+                    <p class="service-desc">Streamline your business processes with custom automated digital systems and cloud integrations.</p>
+                    <div class="service-footer mt-4">
+                        <span class="service-price">Custom Quote</span>
+                        <a href="#contact" class="btn btn-secondary btn-sm">Inquire</a>
+                    </div>
+                </div>
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3 class="service-title">Custom Web Applications</h3>
+                    <p class="service-desc">Tailor-made web applications engineered to solve complex business problems and improve productivity.</p>
+                    <div class="service-footer mt-4">
+                        <span class="service-price">From R15,000</span>
+                        <a href="#contact" class="btn btn-secondary btn-sm">Inquire</a>
+                    </div>
+                </div>
+                <!-- Service 6 -->
+                <div class="service-card coming-soon">
+                    <div class="badge">Coming Soon</div>
+                    <div class="service-icon"><i class="fas fa-lock"></i></div>
+                    <h3 class="service-title">Cybersecurity Solutions</h3>
+                    <p class="service-desc">Advanced security protocols, threat detection, and data protection designed for modern enterprises.</p>
+                    <div class="service-footer mt-4">
+                        <span class="service-price">TBA</span>
+                        <a href="#contact" class="btn btn-secondary btn-sm">Waitlist</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audit / Health Check Section -->
+    <section class="audit-section section-padding" id="audit">
+        <div class="container animate-on-scroll">
+            <div class="grid-2-col align-center">
+                <div class="audit-content">
+                    <h2 class="section-title text-white">Get a Free Website Audit</h2>
+                    <div class="divider bg-white"></div>
+                    <p class="mb-4">Is your website generating leads? Find out with our comprehensive health check. We will analyze your speed, SEO, and conversion potential completely free of charge.</p>
+                    <ul class="check-list text-white mb-4">
+                        <li><i class="fas fa-check-circle" style="color: white;"></i> Performance & Speed Test</li>
+                        <li><i class="fas fa-check-circle" style="color: white;"></i> SEO Foundation Check</li>
+                        <li><i class="fas fa-check-circle" style="color: white;"></i> UI/UX Conversion Review</li>
+                    </ul>
+                </div>
+                <div class="audit-card">
+                    <h3 class="mb-3">Request Your Audit</h3>
+                    <form id="auditForm" class="contact-form" action="https://formsubmit.co/hello@lucidstem.co.za" method="POST">
+                        <div class="form-group mb-2">
+                            <label for="auditName">Name</label>
+                            <input type="text" id="auditName" name="name" required placeholder="Your Name" style="background:var(--color-light); color:var(--color-black); border-color:var(--color-gray-200);">
+                        </div>
+                        <div class="form-group mb-2">
+                            <label for="auditBusiness">Business Name</label>
+                            <input type="text" id="auditBusiness" name="business" required placeholder="Your Company" style="background:var(--color-light); color:var(--color-black); border-color:var(--color-gray-200);">
+                        </div>
+                        <div class="form-group mb-2">
+                            <label for="auditEmail">Email</label>
+                            <input type="email" id="auditEmail" name="email" required placeholder="Email Address" style="background:var(--color-light); color:var(--color-black); border-color:var(--color-gray-200);">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="auditPhone">Phone Number</label>
+                            <input type="tel" id="auditPhone" name="phone" placeholder="Optional Phone" style="background:var(--color-light); color:var(--color-black); border-color:var(--color-gray-200);">
+                        </div>
+                        <input type="hidden" name="_subject" value="New Audit Request from Website">
+                        <button type="submit" class="btn btn-primary btn-block">Get My Free Audit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio section-padding bg-light" id="portfolio">
+        <div class="container animate-on-scroll">
+            <div class="section-header text-center">
+                <h2 class="section-title">Selected Projects</h2>
+                <div class="divider mx-auto"></div>
+                <p class="section-subtitle">Explore a selection of our premium digital work.</p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- Portfolio Featured -->
+                <div class="portfolio-card featured">
+                    <div class="portfolio-image mining-site-theme">
+                        <div class="overlay">
+                            <span class="project-category">Corporate / Mining</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Global Mining Corp Portal</h3>
+                        <div class="portfolio-desc">
+                            <p><strong>Client:</strong> Leading Mining Tier-1 Corporation</p>
+                            <p class="mt-2"><strong>Problem:</strong> Fragmented internal systems causing 30% delays in operational reporting.</p>
+                            <p class="mt-2"><strong>Solution:</strong> Custom scalable portal with real-time API integrations and secure investor dashboards.</p>
+                            <p class="mt-2 text-primary"><strong>Result:</strong> 45% increase in reporting efficiency and pristine zero-downtime performance.</p>
+                        </div>
+                        <a href="#contact" class="portfolio-link mt-3">Start Similar Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-image retail-site-theme">
+                        <div class="overlay">
+                            <span class="project-category">E-Commerce</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Luxe Retail Platform</h3>
+                        <div class="portfolio-desc">
+                            <p><strong>Problem:</strong> Slow load times leading to high cart abandonment.</p>
+                            <p class="mt-2"><strong>Solution:</strong> Complete rebuild using headless commerce and modern web frameworks.</p>
+                            <p class="mt-2 text-primary"><strong>Result:</strong> 3x faster load times, 22% increase in sales.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-image fintech-site-theme">
+                        <div class="overlay">
+                            <span class="project-category">FinTech App</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Nova Finance Dashboard</h3>
+                        <div class="portfolio-desc">
+                            <p><strong>Problem:</strong> Outdated analytics tools losing tech-savvy users.</p>
+                            <p class="mt-2"><strong>Solution:</strong> Custom web dashboard with sleek, interactive charting and fast filtering.</p>
+                            <p class="mt-2 text-primary"><strong>Result:</strong> Client retention increased by 40% in Q1.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section-padding" id="testimonials">
+        <div class="container animate-on-scroll">
+            <div class="section-header text-center">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <div class="divider mx-auto"></div>
+            </div>
+            
+            <div class="testimonial-track" id="testimonialTrack">
+                <!-- Slide 1 -->
+                <div class="testimonial-slide">
+                    <div class="client-quote">
+                        "Lucid Stem transformed our online presence and automated our chaotic lead-gen process. The speed of the site alone boosted conversions by 30%."
+                    </div>
+                    <div class="client-info">
+                        <h4>Sarah Jenkins</h4>
+                        <p>CEO, Nova Retail Group</p>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="testimonial-slide">
+                    <div class="client-quote">
+                        "Working with them was the best IT decision our firm made this year. They built an entirely custom portal that scale with our fast growth seamlessly."
+                    </div>
+                    <div class="client-info">
+                        <h4>Michael Ndlovu</h4>
+                        <p>Operations Director, Global Mining Corp</p>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="testimonial-slide">
+                    <div class="client-quote">
+                        "Fast delivery, robust architecture, and premium design. Lucid Stem gets it right the first time."
+                    </div>
+                    <div class="client-info">
+                        <h4>Claire Venter</h4>
+                        <p>Founder, V-Tech Solutions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-dots" id="sliderDots">
+                <span class="active" data-index="0"></span>
+                <span data-index="1"></span>
+                <span data-index="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us section-padding" id="why-us">
+        <div class="container animate-on-scroll">
+            <div class="grid-2-col align-center">
+                <div class="why-us-content">
+                    <h2 class="section-title">Why Choose Lucid Stem?</h2>
+                    <div class="divider"></div>
+                    <p class="mb-4">We don’t just write code; we build sustainable digital environments that drive transformation. Our commitment to excellence puts your business at the forefront of the digital revolution.</p>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                        <div class="feature-text">
+                            <h4>Fast Delivery</h4>
+                            <p>Most standard projects delivered in 7–14 days without compromising on quality.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-headset"></i></div>
+                        <div class="feature-text">
+                            <h4>Professional Support</h4>
+                            <p>Reliable after-sales support and ongoing technical assistance from expert engineers.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-server"></i></div>
+                        <div class="feature-text">
+                            <h4>Scalable Digital Solutions</h4>
+                            <p>Architecture that grows with you, designed using best-in-class frameworks.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-bullseye"></i></div>
+                        <div class="feature-text">
+                            <h4>Tailored Business Solutions</h4>
+                            <p>We align our tech stacks with your unique operational and strategic requirements.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="why-us-visual">
+                    <div class="stat-grid">
+                        <div class="stat-card">
+                            <h3 class="stat-number">100+</h3>
+                            <p class="stat-label">Projects Completed</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 class="stat-number">99%</h3>
+                            <p class="stat-label">Client Satisfaction</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 class="stat-number">7-14</h3>
+                            <p class="stat-label">Days Delivery Time</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 class="stat-number">24/7</h3>
+                            <p class="stat-label">System Monitoring</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog & Insights Section -->
+    <section class="blog section-padding bg-light" id="blog">
+        <div class="container animate-on-scroll">
+            <div class="section-header text-center">
+                <h2 class="section-title">Latest Insights</h2>
+                <div class="divider mx-auto"></div>
+                <p class="section-subtitle">Strategies to grow your digital presence and dominate your market.</p>
+            </div>
+            
+            <div class="blog-grid">
+                <!-- Article 1 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="overlay" style="position:absolute; inset:0; background:linear-gradient(45deg, var(--color-primary), var(--color-dark)); opacity:0.8;"></div>
+                    </div>
+                    <div class="blog-content">
+                        <span class="date">Jul 12, 2026</span>
+                        <h3 class="blog-title"><a href="#">Why Your Business Needs a Website in South Africa</a></h3>
+                        <p class="text-gray-600 mb-3">Discover the untapped local market potential you are missing out on and how a premium digital presence bridges that gap.</p>
+                        <a href="#" class="portfolio-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- Article 2 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="overlay" style="position:absolute; inset:0; background:linear-gradient(45deg, var(--color-dark), var(--color-primary-dark)); opacity:0.8;"></div>
+                    </div>
+                    <div class="blog-content">
+                        <span class="date">Aug 05, 2026</span>
+                        <h3 class="blog-title"><a href="#">How to Get More Clients Online Automatically</a></h3>
+                        <p class="text-gray-600 mb-3">Learn to build funnels, email captures, and use CRM integrations to build an automated sales engine 24/7.</p>
+                        <a href="#" class="portfolio-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="overlay" style="position:absolute; inset:0; background:linear-gradient(45deg, var(--color-gray-800), var(--color-black)); opacity:0.8;"></div>
+                    </div>
+                    <div class="blog-content">
+                        <span class="date">Aug 21, 2026</span>
+                        <h3 class="blog-title"><a href="#">Common Website Mistakes Costing You Sales</a></h3>
+                        <p class="text-gray-600 mb-3">From slow load times to unclear CTAs, avoid these 5 critical errors that cause visitors to bounce immediately.</p>
+                        <a href="#" class="portfolio-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking System Section -->
+    <section class="booking-section section-padding" id="booking">
+        <div class="container animate-on-scroll">
+            <div class="section-header text-center">
+                <h2 class="section-title">Book a Strategy Call</h2>
+                <div class="divider mx-auto"></div>
+                <p class="section-subtitle">Choose a convenient time to discuss your project requirements with our experts.</p>
+            </div>
+            
+            <div class="booking-container">
+                <div class="booking-sidebar text-white" style="background:var(--color-dark);">
+                    <h3 style="color:white;" class="mb-3">Free 30-Min Consultation</h3>
+                    <div class="contact-detail text-gray-300">
+                        <i class="fas fa-video"></i>
+                        <span>Google Meet / Zoom</span>
+                    </div>
+                    <div class="contact-detail text-gray-300">
+                        <i class="fas fa-clock"></i>
+                        <span>30 Minutes</span>
+                    </div>
+                    <p class="mt-4 text-gray-400">During this call, we will evaluate your current digital presence, provide actionable recommendations, and outline how Lucid Stem can help you scale.</p>
+                </div>
+                <div class="booking-calendar">
+                    <div class="calendar-header border-bottom pb-2 d-flex justify-content-between align-center">
+                        <span id="currentMonthYear">September 2026</span>
+                        <div>
+                            <i class="fas fa-chevron-left mr-2" style="cursor:pointer;"></i>
+                            <i class="fas fa-chevron-right ml-2" style="cursor:pointer;"></i>
+                        </div>
+                    </div>
+                    <div class="calendar-grid">
+                        <div class="calendar-day-header text-gray-400">S</div>
+                        <div class="calendar-day-header text-gray-400">M</div>
+                        <div class="calendar-day-header text-gray-400">T</div>
+                        <div class="calendar-day-header text-gray-400">W</div>
+                        <div class="calendar-day-header text-gray-400">T</div>
+                        <div class="calendar-day-header text-gray-400">F</div>
+                        <div class="calendar-day-header text-gray-400">S</div>
+                        
+                        <!-- Dummy days implementation for UI -->
+                        <div class="calendar-day disabled">28</div>
+                        <div class="calendar-day disabled">29</div>
+                        <div class="calendar-day disabled">30</div>
+                        <div class="calendar-day disabled">31</div>
+                        <div class="calendar-day" data-date="1">1</div>
+                        <div class="calendar-day" data-date="2">2</div>
+                        <div class="calendar-day" data-date="3">3</div>
+                        <div class="calendar-day" data-date="4">4</div>
+                        <div class="calendar-day" data-date="5">5</div>
+                        <div class="calendar-day active" data-date="6">6</div>
+                        <div class="calendar-day" data-date="7">7</div>
+                        <div class="calendar-day" data-date="8">8</div>
+                        <div class="calendar-day" data-date="9">9</div>
+                        <div class="calendar-day" data-date="10">10</div>
+                        <div class="calendar-day" data-date="11">11</div>
+                        <div class="calendar-day" data-date="12">12</div>
+                        <div class="calendar-day" data-date="13">13</div>
+                        <div class="calendar-day" data-date="14">14</div>
+                        <div class="calendar-day" data-date="15">15</div>
+                        <div class="calendar-day" data-date="16">16</div>
+                        <div class="calendar-day" data-date="17">17</div>
+                        <div class="calendar-day" data-date="18">18</div>
+                        <div class="calendar-day" data-date="19">19</div>
+                        <div class="calendar-day" data-date="20">20</div>
+                        <div class="calendar-day" data-date="21">21</div>
+                        <div class="calendar-day" data-date="22">22</div>
+                        <div class="calendar-day" data-date="23">23</div>
+                        <div class="calendar-day" data-date="24">24</div>
+                        <div class="calendar-day" data-date="25">25</div>
+                        <div class="calendar-day" data-date="26">26</div>
+                        <div class="calendar-day" data-date="27">27</div>
+                        <div class="calendar-day" data-date="28">28</div>
+                        <div class="calendar-day" data-date="29">29</div>
+                        <div class="calendar-day" data-date="30">30</div>
+                    </div>
+                    <div class="time-slots active" id="timeSlots">
+                        <div class="time-slot">09:00 AM</div>
+                        <div class="time-slot active">09:30 AM</div>
+                        <div class="time-slot">10:00 AM</div>
+                        <div class="time-slot">10:30 AM</div>
+                        <div class="time-slot">11:00 AM</div>
+                        <div class="time-slot">11:30 AM</div>
+                        <div class="time-slot">02:00 PM</div>
+                        <div class="time-slot">03:00 PM</div>
+                        <button class="btn btn-primary btn-block mt-3" style="grid-column: span 2;" id="confirmBookingBtn">Confirm Booking</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-padding bg-dark text-white" id="contact">
+        <div class="container animate-on-scroll">
+            <div class="section-header text-center">
+                <h2 class="section-title">Ready to Upgrade?</h2>
+                <div class="divider mx-auto bg-primary"></div>
+                <p class="section-subtitle text-gray-300">Let's discuss how technology can accelerate your business.</p>
+            </div>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p class="mb-4 text-gray-300">Reach out for inquiries, proposals, or simply to understand how our expertise fits your needs.</p>
+                    
+                    <div class="contact-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Johannesburg, South Africa</span>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@lucidstem.co.za</span>
+                    </div>
+                    
+                    <a href="https://wa.me/27123456789" target="_blank" class="btn btn-whatsapp mt-4">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm" action="https://formsubmit.co/hello@lucidstem.co.za" method="POST">
+                        <input type="hidden" name="_subject" value="New Contact Form Inquiry">
+                        <div class="form-group grid-2-col-gap">
+                            <div>
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label for="business">Business Name</label>
+                                <input type="text" id="business" name="business" placeholder="Acme Corp">
+                            </div>
+                        </div>
+                        <div class="form-group grid-2-col-gap mt-3">
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="john@example.com">
+                            </div>
+                            <div>
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+27 00 000 0000">
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <label for="service">Service Required</label>
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Select a service...</option>
+                                <option value="Web Development">Website Development</option>
+                                <option value="Maintenance">Website Maintenance & Support</option>
+                                <option value="Consulting">IT Consulting</option>
+                                <option value="Digital Systems">Digital Systems & Automation</option>
+                                <option value="Web App">Custom Web Application</option>
+                                <option value="Other">Other Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group mt-3">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block mt-4">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Funnel -->
+    <section class="newsletter-banner" id="newsletter">
+        <div class="container animate-on-scroll">
+            <h2 class="section-title text-white">Get tips on how to grow your business online</h2>
+            <p class="text-gray-300">Join our mailing list for exclusive insights, tools, and strategies sent right to your inbox.</p>
+            <form class="newsletter-form" id="newsletterForm" action="https://formsubmit.co/hello@lucidstem.co.za" method="POST">
+                <input type="hidden" name="_subject" value="New Newsletter Subscription">
+                <input type="email" name="email" placeholder="Your best email address" required>
+                <button type="submit" class="btn btn-primary" style="white-space: nowrap;">Subscribe Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top grid-3-col">
+                <div class="footer-brand">
+                    <h3 class="logo-text mb-2">Lucid Stem</h3>
+                    <p class="text-gray-400">Building the future of digital business. Professional websites, digital systems, and technology solutions for growing enterprises.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Our Work</a></li>
+                        <li><a href="#why-us">Why Choose Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lucid Stem Pty Ltd. All rights reserved. | Johannesburg, South Africa</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
