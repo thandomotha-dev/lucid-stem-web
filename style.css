@@ -1133,13 +1133,22 @@ ul {
     color: white;
 }
 
+/* Two-column layout wrapper — stays side-by-side on desktop & tablet */
+.audit-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
 .audit-card {
     background: white;
     color: var(--color-black);
     padding: 3rem;
     border-radius: 16px;
     box-shadow: var(--shadow-lg);
-    margin: -100px 0 0 0;
     position: relative;
     z-index: 10;
 }
@@ -1452,8 +1461,9 @@ ul {
         gap: 2rem;
     }
 
+    /* audit-grid stays 2-col at tablet; only card gets a tighter padding */
     .audit-card {
-        margin: 2rem 0;
+        padding: 2rem;
     }
 }
 
@@ -1527,6 +1537,29 @@ ul {
 
     .time-slots {
         grid-template-columns: 1fr;
+    }
+
+    /* Audit section: stack vertically on mobile, CTA first then form */
+    .audit-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .audit-content {
+        text-align: center;
+    }
+
+    .audit-content .check-list {
+        display: inline-block;
+        text-align: left;
+    }
+
+    .audit-card {
+        padding: 1.75rem;
+    }
+
+    .audit-card .btn-block {
+        width: 100%;
     }
 
     .floating-whatsapp {
