@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="./assets/logo.jpg">
 </head>
 <body>
     <!-- Floating Actions -->
@@ -27,7 +29,7 @@
     <!-- Navbar -->
     <header class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">
+            <a href="#" class="logo-brand" aria-label="Lucid Stem Homepage">
                 <span class="logo-text">Lucid Stem</span>
             </a>
             <nav class="nav-menu" id="nav-menu">
@@ -503,66 +505,27 @@
                 <div class="booking-calendar">
                     <div class="calendar-header border-bottom pb-2 d-flex justify-content-between align-center">
                         <span id="currentMonthYear">September 2026</span>
-                        <div>
-                            <i class="fas fa-chevron-left mr-2" style="cursor:pointer;"></i>
-                            <i class="fas fa-chevron-right ml-2" style="cursor:pointer;"></i>
+                        <div class="calendar-nav-controls">
+                            <button class="calendar-nav-btn" id="prevMonthBtn" aria-label="Previous Month"><i class="fas fa-chevron-left"></i></button>
+                            <button class="calendar-nav-btn" id="nextMonthBtn" aria-label="Next Month"><i class="fas fa-chevron-right"></i></button>
                         </div>
                     </div>
-                    <div class="calendar-grid">
-                        <div class="calendar-day-header text-gray-400">S</div>
-                        <div class="calendar-day-header text-gray-400">M</div>
-                        <div class="calendar-day-header text-gray-400">T</div>
-                        <div class="calendar-day-header text-gray-400">W</div>
-                        <div class="calendar-day-header text-gray-400">T</div>
-                        <div class="calendar-day-header text-gray-400">F</div>
-                        <div class="calendar-day-header text-gray-400">S</div>
-                        
-                        <!-- Dummy days implementation for UI -->
-                        <div class="calendar-day disabled">28</div>
-                        <div class="calendar-day disabled">29</div>
-                        <div class="calendar-day disabled">30</div>
-                        <div class="calendar-day disabled">31</div>
-                        <div class="calendar-day" data-date="1">1</div>
-                        <div class="calendar-day" data-date="2">2</div>
-                        <div class="calendar-day" data-date="3">3</div>
-                        <div class="calendar-day" data-date="4">4</div>
-                        <div class="calendar-day" data-date="5">5</div>
-                        <div class="calendar-day active" data-date="6">6</div>
-                        <div class="calendar-day" data-date="7">7</div>
-                        <div class="calendar-day" data-date="8">8</div>
-                        <div class="calendar-day" data-date="9">9</div>
-                        <div class="calendar-day" data-date="10">10</div>
-                        <div class="calendar-day" data-date="11">11</div>
-                        <div class="calendar-day" data-date="12">12</div>
-                        <div class="calendar-day" data-date="13">13</div>
-                        <div class="calendar-day" data-date="14">14</div>
-                        <div class="calendar-day" data-date="15">15</div>
-                        <div class="calendar-day" data-date="16">16</div>
-                        <div class="calendar-day" data-date="17">17</div>
-                        <div class="calendar-day" data-date="18">18</div>
-                        <div class="calendar-day" data-date="19">19</div>
-                        <div class="calendar-day" data-date="20">20</div>
-                        <div class="calendar-day" data-date="21">21</div>
-                        <div class="calendar-day" data-date="22">22</div>
-                        <div class="calendar-day" data-date="23">23</div>
-                        <div class="calendar-day" data-date="24">24</div>
-                        <div class="calendar-day" data-date="25">25</div>
-                        <div class="calendar-day" data-date="26">26</div>
-                        <div class="calendar-day" data-date="27">27</div>
-                        <div class="calendar-day" data-date="28">28</div>
-                        <div class="calendar-day" data-date="29">29</div>
-                        <div class="calendar-day" data-date="30">30</div>
+                    <div class="calendar-grid" id="calendarGrid">
+                        <!-- Rendered dynamically by JavaScript -->
                     </div>
-                    <div class="time-slots active" id="timeSlots">
-                        <div class="time-slot">09:00 AM</div>
-                        <div class="time-slot active">09:30 AM</div>
-                        <div class="time-slot">10:00 AM</div>
-                        <div class="time-slot">10:30 AM</div>
-                        <div class="time-slot">11:00 AM</div>
-                        <div class="time-slot">11:30 AM</div>
-                        <div class="time-slot">02:00 PM</div>
-                        <div class="time-slot">03:00 PM</div>
-                        <button class="btn btn-primary btn-block mt-3" style="grid-column: span 2;" id="confirmBookingBtn">Confirm Booking</button>
+                    <div class="time-slots-container mt-4">
+                        <div class="time-slots-title mb-2"><i class="fas fa-clock text-primary"></i> Select Available Time Slot:</div>
+                        <div class="time-slots active" id="timeSlots">
+                            <div class="time-slot" data-time="09:00 AM">09:00 AM</div>
+                            <div class="time-slot active" data-time="09:30 AM">09:30 AM</div>
+                            <div class="time-slot" data-time="10:00 AM">10:00 AM</div>
+                            <div class="time-slot" data-time="10:30 AM">10:30 AM</div>
+                            <div class="time-slot" data-time="11:00 AM">11:00 AM</div>
+                            <div class="time-slot" data-time="11:30 AM">11:30 AM</div>
+                            <div class="time-slot" data-time="02:00 PM">02:00 PM</div>
+                            <div class="time-slot" data-time="03:00 PM">03:00 PM</div>
+                        </div>
+                        <button class="btn btn-primary btn-block mt-4 btn-lg" id="confirmBookingBtn"><i class="fas fa-calendar-check mr-2"></i> Book Selected Consultation</button>
                     </div>
                 </div>
             </div>
@@ -661,7 +624,9 @@
         <div class="container">
             <div class="footer-top grid-3-col">
                 <div class="footer-brand">
-                    <h3 class="logo-text mb-2">Lucid Stem</h3>
+                    <a href="#" class="logo-brand mb-3" aria-label="Lucid Stem Homepage">
+                        <img src="./assets/logo_cropped.png" alt="Lucid Stem Logo" class="footer-logo-img">
+                    </a>
                     <p class="text-gray-400">Building the future of digital business. Professional websites, digital systems, and technology solutions for growing enterprises.</p>
                 </div>
                 <div class="footer-links">
@@ -687,6 +652,49 @@
             </div>
         </div>
     </footer>
+
+    <!-- Booking Confirmation Modal -->
+    <div class="modal-overlay" id="bookingModal" aria-hidden="true">
+        <div class="modal-card">
+            <button class="modal-close" id="closeModalBtn" aria-label="Close modal">&times;</button>
+            <div class="modal-header">
+                <div class="modal-badge"><i class="fas fa-video text-primary"></i> 30-Min Strategy Call</div>
+                <h3 class="modal-title mt-2">Complete Your Booking</h3>
+                <div id="bookingSummaryText" class="modal-summary mt-2"></div>
+            </div>
+            <form id="bookingForm" action="https://formsubmit.co/hello@lucidstem.co.za" method="POST" class="modal-form mt-4">
+                <input type="hidden" name="_subject" value="New Strategy Consultation Call Booking">
+                <input type="hidden" id="modalBookingDate" name="selected_date">
+                <input type="hidden" id="modalBookingTime" name="selected_time">
+
+                <div class="form-group mb-3">
+                    <label for="bookingName">Your Name *</label>
+                    <input type="text" id="bookingName" name="name" required placeholder="John Doe">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="bookingEmail">Email Address *</label>
+                    <input type="email" id="bookingEmail" name="email" required placeholder="john@example.com">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="bookingPhone">Phone / WhatsApp Number</label>
+                    <input type="tel" id="bookingPhone" name="phone" placeholder="+27 00 000 0000">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="bookingNotes">Project Notes (Optional)</label>
+                    <textarea id="bookingNotes" name="notes" rows="3" placeholder="Briefly describe what you would like to discuss..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block btn-lg mt-3">Confirm & Schedule Call</button>
+            </form>
+
+            <div id="bookingSuccessMessage" class="booking-success hidden text-center p-4">
+                <div class="success-icon mb-3"><i class="fas fa-circle-check text-primary"></i></div>
+                <h3>Consultation Booked!</h3>
+                <p class="text-gray-600 mt-2" id="successDetailsText"></p>
+                <p class="text-sm text-gray-400 mt-3">We look forward to speaking with you! An calendar invite link has been dispatched to your email address.</p>
+                <button type="button" class="btn btn-secondary mt-4" id="closeSuccessBtn">Done</button>
+            </div>
+        </div>
+    </div>
 
     <script src="./script.js"></script>
 </body>

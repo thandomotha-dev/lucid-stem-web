@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+
+# Local Environment Variables & DB Files
+.env
+*.db
+*.sqlite
+*.sqlite3
+server/db/*.db
+
+# OS Files & Logs
+.DS_Store
+Thumbs.db
+*.log

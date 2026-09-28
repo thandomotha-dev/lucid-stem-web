@@ -1,0 +1,26 @@
+{
+  "name": "lucid-stem-web",
+  "version": "1.0.0",
+  "description": "Lucid Stem IT, Web & Digital Solutions - Fullstack Booking System",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node server/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "googleapis": "^140.0.0",
+    "sqlite3": "^5.1.7"
+  },
+  "keywords": [
+    "lucid-stem",
+    "booking-system",
+    "google-meet",
+    "express",
+    "react"
+  ],
+  "author": "Lucid Stem",
+  "license": "MIT"
+}
