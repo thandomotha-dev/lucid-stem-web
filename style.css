@@ -1382,10 +1382,10 @@ ul {
     gap: 0.75rem;
     margin-top: 0.75rem;
     transition: opacity 0.2s ease-in-out;
-}
     border-top: 1px solid var(--color-gray-100);
     padding-top: 2rem;
 }
+
 
 .time-slots.active {
     display: grid;
